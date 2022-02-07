@@ -1,5 +1,5 @@
 # This script counts vowels in a given variable 's'
-s = "azcbobobegghakl"
+s = "azcbobobegghaklbob"
 #i = 0
 #count = 0
 #print(len(s))
@@ -7,9 +7,11 @@ s = "azcbobobegghakl"
 #print(f)
 count = 0
 for x in range(len(s)):
+    if x == len(s) - 2:
+        break
     if (s[x]) == 'b' and (s[x+1]) == 'o' and (s[x+2]) == 'b':
         count = count + 1
-print(count)
+print('Number of times bob occurs is: ' + str(count))
 
 #while (i <= len(s)):
 #    f = s[i]
